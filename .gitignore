@@ -1,2 +1,6 @@
 venv/
 task_cli.egg-info/
+build/
+dist/
+__pycache__/
+*.py[cod]
