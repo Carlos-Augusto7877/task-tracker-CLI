@@ -6,6 +6,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         "click",
+        "tabulate",
     ],
     entry_points={
         "console_scripts": [
