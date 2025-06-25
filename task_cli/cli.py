@@ -70,6 +70,7 @@ def delete_task(json_obj, id: int):
         return None
     
     for i, t in enumerate(json_obj["tasks"]):
+        print("test")
         if t["ID"] == id:
             del json_obj["tasks"][i]
             break
