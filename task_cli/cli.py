@@ -61,7 +61,6 @@ def add_task(json_obj, task: str):
 @click.argument("id", type=int)
 @access_tasks
 def delete_task(json_obj, id: int):
-
     if json_obj["tasks"] == []:
         print("There's no tasks in the task list.")
         return None
@@ -74,7 +73,7 @@ def delete_task(json_obj, id: int):
         if t["ID"] == id:
             del json_obj["tasks"][i]
             break
-        elif t["ID"] < id:
+        elif t["ID"] > id:
             print("The id doesn't exist in the task database. Check the entire list with the command: 'list'")
             return None
         
